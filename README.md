@@ -1,6 +1,6 @@
 # Vid-ODE - Official PyTorch Implementation
 
-<p align="left"><img width="85%" src="assets/teaser.png" /></p>
+<p align="left"><img width="95%" src="assets/teaser.jpg" /></p>
 
 This repository provides the official PyTorch implementation of the following paper:
 
@@ -17,16 +17,17 @@ This repository provides the official PyTorch implementation of the following pa
 ## Installation
 Clone this repository:
 
-```
+```bash
 git clone https://github.com/psh01087/Vid-ODE.git
 cd Vid-ODE/
 ```
 
 We support `python3`. Install the dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
+
 
 ## Downloading Datasets
 
@@ -46,19 +47,26 @@ We preprocess all datasets for training our models.
 
 To train a model on specific dataset, run:
 
-```
-CUDA_VISIBLE_DEVICES=0 python main.py  --dataset kth
+```bash
+CUDA_VISIBLE_DEVICES=0 python main.py --phase train --dataset kth
 ```
 
-All arguments used for this project are described in the function "get_opt()" in ```main.py```. There are a lot of options to train our network on a wide range of datasets and also to evaluate various architectures for writing the paper. However,  just for the purpose of executing the proposed method, the number of arguments that you need to change would be very limited.
+All arguments used for this project are described in the function "get_opt()" in ```main.py```. There are a lot of options to train our network on a wide range of datasets and also to evaluate various architectures for writing the paper. However, just for the purpose of executing the proposed method, the number of arguments that you need to change would be very limited.
 The following options will be what you need to concern:
 
-```--dataset``` - Specify the dataset to train, select among kth or penn or mgif or hurricane.<br>
-```--extrap```  - If you toggle this option you can train the extrapolation model.<br>
 
-<!-- ## Evaluation -->
+```--dataset``` : Specify the dataset to train, select among [kth, penn, mgif, hurricane].<br>
+```--extrap``` : If you toggle this option, you can train the extrapolation model.<br>
+```--irregular``` : If you toggle this option, you can train the model with irregularly sampled frames.<br>
 
 
+## Evaluation
+
+We evaluate our model using Structural Similarity (SSIM), Peak Signal-to-Noise Ratio (PSNR), and Learned Perceptual Image Patch Similarity (LPIPS). To evaluate a model on specific dataset, run:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python main.py --phase test_met --dataset kth --test_dir CHECKPOINT_DIR
+```
 
 
 ## Citation
