@@ -77,6 +77,9 @@ If you find this work useful for your research, please cite our [paper](https://
   title={Vid-ODE: Continuous-Time Video Generation with Neural Ordinary Differential Equation},
   author={Park, Sunghyun and Kim, Kangyeol and Lee, Junsoo and Choo, Jaegul and Lee, Joonseok and Kim, Sookyung and Choi, Edward},
   journal={arXiv preprint arXiv:2010.08188},
-  year={2020}
+  booktitle={The Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2021},
+  pages={online},
+  publisher={{AAAI} Press},
+  year={2021},
 }
 ```
