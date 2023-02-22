@@ -31,10 +31,10 @@ pip install -r requirements.txt
 
 ## Downloading Datasets
 
-1. [KTH Action](https://drive.google.com/file/d/1WZ-FSTmK-C9mmytUB2SuuwlO-9-K5C3f/view?usp=sharing)
-2. [Moving GIF](https://drive.google.com/file/d/1bocNsEJ_AbXKxQUHGKi6oL_nLRH9zr60/view?usp=sharing)
-3. [Penn Action](https://drive.google.com/file/d/1oypwRIgzZZ4N_vIxYTgJYiU1qLGOG4lb/view?usp=sharing)
-4. [Hurricane](https://drive.google.com/file/d/1bKhYMC1cb5IVPpsnN1FkifcKZ7-OrHQC/view?usp=sharing)
+1. [KTH Action](https://www.dropbox.com/s/dtk54q8woufqimh/kth_action.tar.gz?dl=0)
+2. [Moving GIF](https://www.dropbox.com/s/ltbatvndujit0wi/moving_gif.tar.gz?dl=0)
+3. [Penn Action](https://www.dropbox.com/s/m7n62qm12xepsjl/penn_action.tar.gz?dl=0)
+4. [Hurricane](https://www.dropbox.com/s/cn1njdonfwl1nta/hurricane.tar.gz?dl=0)
 
 After downloading the dataset and unzipping files, place them under the ```dataset``` folder in current directory.
 We preprocess all datasets for training our models.
